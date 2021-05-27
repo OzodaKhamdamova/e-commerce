@@ -357,15 +357,14 @@ select::after{
     .menu-list{
       display: none;
     }
-   
     .burger{
-        display: flex;
-        background-image: url("../images/white-burger.jpg");
-        width: 100%;
-        height: 30px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: var(--light-black-color);
+    display: flex;
+    background-image: url("../images/white-burger.jpg");
+    width: 100%;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--light-black-color);
         margin: 0;
         padding: 4px;
         justify-content: center;
