@@ -78,7 +78,6 @@ ul{
 .header--mini-container {
     display: flex;
     justify-content: space-between;
-    margin: 0;
     padding-bottom: 16px;
     border-bottom: 1px solid #F9F9F9;
    
@@ -187,6 +186,12 @@ select::after{
     background-position: center center;
     padding: 13px;
 }
+.categories-mobile{
+    display: none;
+}
+.nav-user-tools{
+    display: none;
+}
 .user-tools{
     display: flex;
     align-items: center;
@@ -266,21 +271,48 @@ select::after{
 .menu-item:not(:last-child){
    margin-right: 43px;
 }
-
-.burger-btn{
-  display: none;
-  width: 34px;
-  height: 34px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 1000;
-  border: none;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("../images/open");           
-} 
+.burger-menu{
+    display: none;
+}
+.footer-top-section{
+    display: flex;
+    justify-content: space-between ;
+    margin-bottom: 48px;
+}
+.footer-top-section__title{
+    color: #151515;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.top-section-list__item{
+    list-style-type: none;
+    margin-bottom: 16px;
+}
+.top-section-list__link{
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 19px;
+}
+.bottom-section-list{
+    list-style: none; 
+    display: flex;
+    flex-wrap: wrap;
+}
+.bottom-section-list__item{
+    background-color:#F5F5F5;
+    padding: 5px 7px;
+    margin: 16px;
+    border-radius: 9px;
+}
+.bottom-section-link{
+    text-decoration: none;
+    color:#151515;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+}
 
 @media only screen and (max-width: 768px) {
     body{
@@ -332,17 +364,26 @@ select::after{
         width: 100%;
         padding: 0 15px;
     }
-    .header--mini-container{
+    .communication{
         display: none;
-        margin-top: 0;
+    }
+    .search{
+        display: flex;
+    }
+    .products-category{
+        display: flex;
+        flex-grow: 1;
     }
     .tools{
         display: flex;
         flex-direction: column;
     }
-    .search{
-       max-width: 330px;
-       margin-left: -9px;
+    .header-menu{
+        display: none;
+    }
+    .burger:hover , :active .header-menu{
+       display: block;
+       padding: 5px 15px;
     }
     .user-tools{
         order: -2;
@@ -350,9 +391,10 @@ select::after{
         right: -100px;
     }
     .site-logo{
-    position: relative;
-    top: -40px;
-    left: -50px;
+        order: -2;
+    }
+    .categories-mobile{
+        display: block;
     }
     .menu-list{
       display: none;
@@ -365,13 +407,79 @@ select::after{
     background-repeat: no-repeat;
     background-size: contain;
     background-color: var(--light-black-color);
-        margin: 0;
-        padding: 4px;
-        justify-content: center;
+    margin: 0;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    color: #F9F9F9;
+    }
+    .site-footer{
+        overflow-x: hidden;
+    }
+    .container{
+        width: 100%;
+    }
+    .search{
+        display: none;
+    }
+    .mobile-form{
+        display: inline-block;
         align-items: center;
-        color: #F9F9F9;
-        order: -1;
-       
+        background: #F9F9F9;
+        border: 1px solid #d1d1d1;
+        border-radius: 12px;
+    }
+.footer-top-section{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    }
+.footer-top-section__title{
+    font-size: 14px;
+}
+
+.first-list{
+    margin-right: 25px;
+}
+
+}
+@media only screen and (max-width: 610px){
+    .header--mini-container{
+        width: 610px;
+    }
+    .site-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .site-nav-list{
+       margin-left: auto;
+       width: 370px;
+    }
+    .communication{
+        display: none;
+    }
+    .user-tools{
+        display: none;
+    }
+    .nav-user-tools{
+       display: block;
+       width: 100px;
+       margin-left: auto;
+    }
+    .site-footer{
+        overflow-x: hidden;
+    }
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .footer-top-section{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        }
+    .footer-top-section__title{
+        font-size: 14px;
     }
 }
 
