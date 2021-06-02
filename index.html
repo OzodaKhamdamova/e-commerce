@@ -9,75 +9,70 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- SITE_HEADER -->
     <header class="site-header">
-        <div class="container header--mini-container">
-            <div class="communication">
-                <a class=" communication-link chat" href="info@freshnesecom.com">Chat with us</a>
-                <a class="communication-link" href="tel:+420336775664">+420 336 775 664</a>
-                <a class="communication-link" href="info@freshnesecom.com">info@freshnesecom.com</a>
-            </div>
+        <div class="site-header__container container">
+            <button class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="sitenav">
 
-            
-            <nav class="site-nav">
-                <ul class="nav-user-tools">
-                    <button class="btn user-button"><img src="images/user-account.svg" alt="user-account"></button>
-                    <button class="btn user-button"><img src="images/pocket.svg" alt=""></button>
-    
+                <ul class="sitenav-list">
+                    <li class="sitenav-item">
+                        <a class="sitenav-link" href="#">Blog</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a class="sitenav-link" href="#">About Us</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a class="sitenav-link" href="#">Careers</a>
+                    </li>
                 </ul>
-                <ul class="site-nav-list">
-                    <li class="nav-list-item"><a class="nav-list-link" href="blog.html">Blog</a></li>
-                    <li class="nav-list-item"><a class="nav-list-link" href="about.html">About Us</a></li>
-                    <li class="nav-list-item last-nav-item"><a class="nav-list-link" href="careers.html">Careers</a></li>
-                </ul>
-               
+                <div class="contact-us">
+                    <a class="contact-us__link contact-us__link-chat" href="#">Chat with us</a>
+                    <a class="contact-us__link" href="tel:+420 336 775 664">+420 336 775 664</a>
+                    <a class="contact-us__link" href="#">info@freshnesecom.com</a>
+                </div>
             </nav>
-        </div>
-    
-        </div>
-        
-        <div class="tools container">
-            <div class="site-logo">
-                <a href="index.html">
-                    <img src="images/site-header-logo.svg" alt="Freshnescom logo" width="177" height="50">
+
+            <div class="header-main">
+
+                <a class="site-header__logo" href="#">
+                    <img class="site-logo__img" src="./images/site-header-logo.svg" alt="site logo" width="177" height="18">
                 </a>
-    
-            </div>
-                <form class="search">
-                    <select name="products" class="products-category" id="products-search">
-                        <option class="option-category" value="1">All categories</option>
-                        <option value="2">Fruits</option>
-                        <option value="3">Vegetables</option>
-                        <option value="4">Bakery</option>
-                        <option value="5">Meat and Fish</option>
+
+                <div class="search-box">
+                    <label class="visually-hidden" for="categories">All categories</label>
+                    <select class="categories-list" id="categories">
+                        <option value="all-categories">All categories</option>
+                        <option value="categories">categories</option>
+                        <option value="categories">categories</option>
+                        <option value="categories">categories</option>
                     </select>
-                    <input class="search-input" type="text" placeholder="Search Products , categories...">
-                    <button class="search-button"></button>
-          </form>
-          <form action="mobile-form">
-            <div class="categories-mobile">
-                <select name="products" class="products-category" id="products-search">
-                    <option class="option-category" value="1">All categories</option>
-                    <option value="2">Fruits</option>
-                    <option value="3">Vegetables</option>
-                    <option value="4">Bakery</option>
-                    <option value="5">Meat and Fish</option>
-                </select>
-                <div class="categories-mobile-input">
-                    <input class="search-input" type="text" placeholder="Search Products , categories...">
-                    <button class="search-button"></button>
+                    <form class="site-header__form" action="#">
+                        <label class="visually-hidden" for="search-fields"></label>
+                        <input class="input-search" type="search" name="input" id="search-fields"
+                            placeholder="Search Products, categories ..." required>
+                        <button class="search-btn" type="submit"></button>
+                    </form>
                 </div>
-            </form>
 
-                    <div class="user-tools">
-                    <button class="btn user-button"><img src="images/user-account.svg" alt="user-account"></button>
-                    <button class="btn user-button"><img src="images/pocket.svg" alt=""></button>
-    
+                <div class="baskets-wrapper">
+                    <a class="profil" href="#">
+                        <img src="./images/user-account.svg" alt="user account icon" width="24" height="24">
+                    </a>
+                    <a class="basket" href="#">
+                        <img src="./images/pocket.svg" alt="pocket icon" width="24" height="24">
+                    </a>
                 </div>
 
             </div>
-            
-        <div class="header-menu">
-            <div class="site-header menu-container container">
+        </div>
+        <div class="site-header__menu">
+            <div class="site-header__menu-container container">
+
                 <ul class="menu-list">
 
                     <li class="menu-item">
@@ -223,49 +218,456 @@
                         </ul>
                         <a class="menu-link" href="#">Pharmacy</a>
                     </li>
+
+                    <li class="more-item">More
+                        <ul class="menu-list more-list">
+
+                            <li class="menu-item">
+                                <ul class="dropdown more-dropdown">
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Bakery</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Bakery</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Bakery</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Bakery</a>
+                                    </li>
+                                </ul>
+                                <a class="menu-link" href="#">Bakery</a>
+                            </li>
+
+                            <li class="menu-item">
+                                <ul class="dropdown more-dropdown">
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Fruit and vegetables</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Fruit and vegetables</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Fruit and vegetables</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Fruit and vegetables</a>
+                                    </li>
+                                </ul>
+                                <a class="menu-link" href="#">Fruit and vegetables</a>
+                            </li>
+
+                            <li class="menu-item">
+                                <ul class="dropdown more-dropdown">
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Meat and fish</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Meat and fish</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Meat and fish</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Meat and fish</a>
+                                    </li>
+                                </ul>
+                                <a class="menu-link" href="#">Meat and fish</a>
+                            </li>
+
+                            <li class="menu-item">
+                                <ul class="dropdown more-dropdown">
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Drinks</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Drinks</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Drinks</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Drinks</a>
+                                    </li>
+                                </ul>
+                                <a class="menu-link" href="#">Drinks</a>
+                            </li>
+
+                            <li class="menu-item">
+                                <ul class="dropdown more-dropdown">
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Kitchen</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Kitchen</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Kitchen</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Kitchen</a>
+                                    </li>
+                                </ul>
+                                <a class="menu-link" href="#">Kitchen</a>
+                            </li>
+
+                            <li class="menu-item">
+                                <ul class="dropdown more-dropdown">
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Special nutrition</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Special nutrition</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Special nutrition</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Special nutrition</a>
+                                    </li>
+                                </ul>
+                                <a class="menu-link" href="#">Special nutrition</a>
+                            </li>
+
+                            <li class="menu-item">
+                                <ul class="dropdown more-dropdown">
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Baby</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Baby</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Baby</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Baby</a>
+                                    </li>
+                                </ul>
+                                <a class="menu-link" href="#">Baby</a>
+                            </li>
+
+                            <li class="menu-item">
+                                <ul class="dropdown more-dropdown">
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Pharmacy</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Pharmacy</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Pharmacy</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">Pharmacy</a>
+                                    </li>
+                                </ul>
+                                <a class="menu-link" href="#">Pharmacy</a>
+                            </li>
+
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
-</header>
-<main class="home-main">
-    <div class="container">
-        <div class="category-banners">
-            <ul class="main-menu-list">
-                <h3 class="menu-list-title">Category menu</h3>
-                <li class="menu-list-item" ><a class="menu-list-link" href="">Bakery</a></li>
-                <li class="menu-list-item" ><a class="menu-list-link" href="">Fruit and vegetables
-                </a></li>
-                <li class="menu-list-item" ><a class="menu-list-link" href="">Meat and fish</a></li>
-                <li class="menu-list-item" ><a class="menu-list-link" href="">Drinks</a></li>
-                <li class="menu-list-item" ><a class="menu-list-link" href="">Kitchen</a></li>
-                <li class="menu-list-item menu-list-bottom"><a class="menu-list-link banner-link" href="">More categories</a></li>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+    </header>
 
 
-                </div>
-
+    <main class="site-main">
+        <div class="site-main__container container">
+            <ul class="side-menu__list">
+                <li class="side-menu__item">
+                    <h2 class="side-main__title">Category menu</h2>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Bakery</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Fruit and vegetables</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Meat and fish</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Drinks</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Kitchen</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__btn btn" href="#">More categories</a>
+                </li>
             </ul>
-            <div class="home-banners">
-                <div class="banner">
-                    <b class="banner-title-focus">Banner subfocus</b>
-                    <h3 class="banner-title">Space for heading</h3>
-                    <a class="banner-link" href="#">Read recepies</a>
+
+            <div class="accent-cards__wrapper">
+                <div class="accent-card">
+                    <p class="accent-card__text">Banner subfocus</p>
+                    <h2 class="accent-card__title">Space for heading</h2>
+                    <a class="accent-card__btn btn" href="#">Read recepies</a>
                 </div>
-                <div class="banner">
-                    <b class="banner-title-focus">Banner subfocus</b>
-                    <h3 class="banner-title">Space for heading</h3>
-                    <a class="banner-link" href="#">Read recepies</a>
+                <div class="accent-card">
+                    <p class="accent-card__text">Banner subfocus</p>
+                    <h2 class="accent-card__title">Space for heading</h2>
+                    <a class="accent-card__btn btn" href="#">Read recepies</a>
                 </div>
             </div>
-               
         </div>
 
+        <div class="site-main__container container">
+            <ul class="side-menu__list">
+                <li class="side-main__item">
+                    <h2 class="side-menu__title">Best selling products</h2>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Kitchen</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Meat and fish</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Special nutrition</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Pharmacy</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Baby</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__btn btn" href="#">More categories</a>
+                </li>
+            </ul>
 
-    </div>
-</main>
+            <div class="cards-wrapper">
+                <div class="card">
+                    <h3 class="card-title">Product Title</h3>
+                    <p class="card-text">Space for a small product description </p>
+                    <div class="card-box">
+                        <b class="card-price">1.48 USD<span></span></b>
+                        <a class="card-btn btn" href="#">Buy now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Product Title</h3>
+                    <p class="card-text">Space for a small product description </p>
+                    <div class="card-box">
+                        <b class="card-price">1.48 USD<span></span></b>
+                        <a class="card-btn btn" href="#">Buy now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Product Title</h3>
+                    <p class="card-text">Space for a small product description </p>
+                    <div class="card-box">
+                        <b class="card-price">1.48 USD<span></span></b>
+                        <a class="card-btn btn" href="#">Buy now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-main__container container">
+            <ul class="side-menu__list">
+                <li class="side-main__item">
+                    <h2 class="side-menu__title">Best from Farmers</h2>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Carrots</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Tomatoes</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Tomatoes</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Chicken</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__link" href="#">Pork</a>
+                </li>
+                <li class="side-menu__item">
+                    <a class="side-menu__btn btn" href="#">More categories</a>
+                </li>
+            </ul>
+
+            <div class="cards-wrapper">
+                <div class="card">
+                    <h3 class="card-title">Product Title</h3>
+                    <p class="card-text">Space for a small product description </p>
+                    <div class="card-box">
+                        <b class="card-price">1.48 USD<span></span></b>
+                        <a class="card-btn btn" href="#">Buy now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Product Title</h3>
+                    <p class="card-text">Space for a small product description </p>
+                    <div class="card-box">
+                        <b class="card-price">1.48 USD<span></span></b>
+                        <a class="card-btn btn" href="#">Buy now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Product Title</h3>
+                    <p class="card-text">Space for a small product description </p>
+                    <div class="card-box">
+                        <b class="card-price">1.48 USD<span></span></b>
+                        <a class="card-btn btn" href="#">Buy now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="customers">
+
+            <div class="global-container container">
+                <h2 class="global-container__title">Our customers says</h2>
+                <a class="global-container__btn" href="#">Button</a>
+            </div>
+
+            <ul class="slides">
+                <li class="slide-card">
+                    <p class="slide-card__text">“ This is an super space for your customers qoute. Don’t worry it works
+                        smooth as pie. You will get all what you need by writiing a text here " </p>
+                    <h3 class="slide-card__user">Name and Surname</h3>
+                    <img class="slide-card__img" src="images/customer-img.png" alt="customer image" width="48" height="48">
+                </li>
+                <li class="slide-card">
+                    <p class="slide-card__text">“ This is an super space for your customers qoute. Don’t worry it works
+                        smooth as pie. You will get all what you need by writiing a text here " </p>
+                    <h3 class="slide-card__user">Name and Surname</h3>
+                    <img class="slide-card__img" src="images/customer-img2.png" alt="customer image" width="48"
+                        height="48">
+                </li>
+                <li class="slide-card">
+                    <p class="slide-card__text">“ This is an super space for your customers qoute. Don’t worry it works
+                        smooth as pie. You will get all what you need by writiing a text here " </p>
+                    <h3 class="slide-card__user">Name and Surname</h3>
+                    <img class="slide-card__img" src="images/customer-img.png" alt="customer image" width="48" height="48">
+                </li>
+                <li class="slide-card">
+                    <p class="slide-card__text">“ This is an super space for your customers qoute. Don’t worry it works
+                        smooth as pie. You will get all what you need by writiing a text here " </p>
+                    <h3 class="slide-card__user">Name and Surname</h3>
+                    <img class="slide-card__img" src="images/customer-img.png" alt="customer image" width="48"
+                        height="48">
+                </li>
+
+        
+
+            </ul>
+
+        </section>
+
+        <section class="headline">
+            <div class="headline-container container">
+
+                <div class="global-container">
+                    <h2 class="global-container__title">Section Headline</h2>
+                    <a class="global-container__btn" href="#">Button</a>
+                </div>
+
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <h3 class="card-title">Product Title</h3>
+                        <p class="card-text">Space for a small product description </p>
+                        <div class="card-box">
+                            <b class="card-price">1.48 USD<span></span></b>
+                            <a class="card-btn btn" href="#">Buy now</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card-title">Product Title</h3>
+                        <p class="card-text">Space for a small product description </p>
+                        <div class="card-box">
+                            <b class="card-price">1.48 USD<span></span></b>
+                            <a class="card-btn btn" href="#">Buy now</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card-title">Product Title</h3>
+                        <p class="card-text">Space for a small product description </p>
+                        <div class="card-box">
+                            <b class="card-price">1.48 USD<span></span></b>
+                            <a class="card-btn btn" href="#">Buy now</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card-title">Product Title</h3>
+                        <p class="card-text">Space for a small product description </p>
+                        <div class="card-box">
+                            <b class="card-price">1.48 USD<span></span></b>
+                            <a class="card-btn btn" href="#">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="blog-container container">
+                <div class="global-container">
+                    <h2 class="global-container__title">Read our Blog posts</h2>
+                    <a class="global-container__btn" href="#">Go to Blog</a>
+                </div>
+
+                <div class="blog-wrapper">
+                   <div class="dinner-tips">
+                       <a class="dinner-tips__link" href="#">
+                        <img class="dinner-tips__img" src="./images/food5.png" alt="food" width="469" height="400">
+                       </a>
+                       <h3 class="dinner-tips__title">Our chef tips for a great and tasty dinner ready in 20 minutes</h3>
+                       <span class="author-box"> Author<time class="author-time" datetime="2021-12-02">17. 6. 2020</time></span>
+                   </div>
+
+                   <div class="vegetable">
+                       <img class="vegetable-img" src="./images/food.png" alt="food" width="269" height="180">
+                       <a class="vegetable__link" href="#">
+                        <h3 class="vegetable-title">Which vegetable your family will love and want’s eat each day</h3>
+                       </a>
+                       <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6. 2020</time></span>
+                   </div>
+
+                   <div class="left-side">
+                       <div class="good-start">
+                          <div class="good-start__info">
+                            <h3 class="good-start__title">Salat is kinda good start to your morning routines</h3>
+                            <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6. 2020</time></span>
+                          </div>
+                          <img src="./images/food4.png" alt="food" width="96" height="96">
+                       </div>
+                       <div class="good-start">
+                        <div class="good-start__info">
+                          <h3 class="good-start__title">Salat is kinda good start to your morning routines</h3>
+                          <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6. 2020</time></span>
+                        </div>
+                        <img src="./images/food4.png" alt="food" width="96" height="96">
+                     </div>
+                     <div class="good-start">
+                        <div class="good-start__info">
+                          <h3 class="good-start__title">Salat is kinda good start to your morning routines</h3>
+                          <span class="time-box"> Author<time class="date-time" datetime="2021-12-02">17. 6. 2020</time></span>
+                        </div>
+                        <img src="./images/food5.png" alt="food" width="96" height="96">
+                     </div>
+                   </div>
+                </div>
+
+            </div>
+        </section>
+        
+    </main>
+
+
 
  
 
